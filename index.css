@@ -1,0 +1,193 @@
+:root{
+
+    --main-white:hsla(0, 0%, 100%, 0.658);
+    --main-rudise:25px;
+
+}
+
+body{
+
+    font-family:'Hanken Grotesk';
+    
+}
+
+main{
+
+    display: flex;
+    margin: auto;
+    margin-top: 10vh;
+    max-width: 600px;
+    border-radius: var(--main-rudise);
+    box-shadow: 0 0 18px -10px ;
+}
+
+
+.blue-section{
+
+    text-align: center;
+    width: 50%;
+    padding: 20px 0;
+    border-radius: var(--main-rudise);
+    color: var(--main-white);
+    background-color:hsl(241, 100%, 67%);
+}
+
+
+
+
+.crc-rate{
+
+    background-color: rgb(103, 51, 245);
+    border-radius: 100%;
+    width:6em;
+    height:6em;
+    margin: 30px auto ;
+    padding: 35px;
+    
+}
+
+.crc-rate span{
+
+    font-weight: 900;
+    font-size: 60px;
+    margin: 0;
+    color:#fff;
+}
+
+.crc-rate p{
+
+    margin: 0;
+    color: var(--main-white);
+}
+
+.blue-section h1{
+
+    color: #fff;
+}
+
+h1 + p{
+
+    width: 75%;
+    margin: auto;
+    color: var(--main-white);
+}
+
+/* end blue section */
+
+/* start white section */
+
+.whtie-section{
+
+    padding:0 7%;
+    width: 40%;
+}
+
+.whtie-section h2{
+
+    font-size: 1.3em;
+}
+
+
+.rate-container{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px 0;
+    padding: 0px 5%;
+    border-radius: 10px;
+}
+
+.rates-container div:nth-of-type(1){
+
+    background-color:hsl(0deg 100% 98.28%);
+}
+
+.rates-container div:nth-of-type(1) .img-container{
+
+color:hsl(0, 100%, 67%) ;
+
+}
+
+
+.rates-container div:nth-of-type(2){
+
+    background-color: hsl(39deg 100% 97.41%);
+}
+
+.rates-container div:nth-of-type(2) .img-container{
+
+    color:hsl(39, 100%, 56%) ;
+    
+    }
+
+.rates-container div:nth-of-type(3){
+
+    background-color: hsl(166deg 100% 96.98%);
+}
+
+.rates-container div:nth-of-type(3) .img-container{
+
+    color:hsl(166, 100%, 37%) ;
+    
+    }
+
+.rates-container div:nth-of-type(4){
+
+    background-color:hsl(234deg 100% 97.41%);
+}
+
+.rates-container div:nth-of-type(4) .img-container{
+
+    color:hsl(234, 85%, 45%) ;
+    
+    }
+
+
+    .rates-container button{
+
+        width: 100%;
+        margin-bottom: 30px;
+        padding: 20px 0;
+        border: none;
+        color: white;
+        border-radius: 30px;
+        font-size: 1em;
+         background-color: hsl(224, 30%, 27%);
+         cursor: pointer;
+
+
+
+    }
+
+    .rates-container button:active{
+
+        background-color:hsl(241, 100%, 67%);
+    }
+
+    @media (max-width:667px){
+
+            body{
+
+                margin: 0;
+            }
+            main{
+
+                margin: 0;
+
+            flex-direction: column;
+            }
+
+            main .blue-section,.whtie-section{
+
+                width: auto;
+            }
+
+            .blue-section{
+
+                border-top-left-radius: 0;
+                border-top-right-radius: 0;
+            }
+
+
+    }
